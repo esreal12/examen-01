@@ -1,0 +1,21 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/typography";
+@import "base/animations";
+@import "base/base";
+@import "base/utilities";
+@import "base/mediaqueries";
+
+@import "components/heading-primary";
+@import "components/card";
+@import "components/social-links";
+// @import "components/gallery";
+
+@import "layout/header";
+@import "layout/grid";
+
+@import "pages/home";
+
+@import "vendors/reset";

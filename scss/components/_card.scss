@@ -1,0 +1,23 @@
+.card {
+
+    border-top: 2px solid $color-grey-light;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    &__image{
+        display: block;
+    }
+
+    &__text {
+        margin: 0 0 2rem 0;
+        font-size: 1.7rem;
+        text-align: center;
+        line-height: 1.9rem;
+        
+        
+        & a {
+            color: $color-primary;
+        }
+    }
+}
+

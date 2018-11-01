@@ -1,0 +1,38 @@
+.header {
+    height: auto;
+    padding: 1.3rem;
+    border-bottom: 0.063rem solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 1;
+
+    &__logotype {
+        display: block;
+        margin: 0 auto;
+        width: 5.5rem;
+        text-align: center;
+    }
+
+    &__nav {
+        overflow: hidden;
+        list-style: none;
+        text-align: center;
+        padding-top: 1.5rem;
+
+        & ul li:not(:last-child) {
+            display: inline;
+            margin-right: 1rem;
+
+        }
+
+        & a {
+            color: $color-grey;
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+#esreal_logo {
+    fill: $color-primary;
+}

@@ -1,0 +1,27 @@
+.section-content {
+    padding: $layout-intro;
+
+    & .cards-container {
+        display: block;
+        position: relative;
+        margin-bottom: 2rem;
+
+        &__more {
+            text-align: center;
+            font-size: 1.4rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #000;
+            
+            & a {
+                color: $color-tertiary;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.footer {
+    padding-top: 2rem;
+
+}
+
