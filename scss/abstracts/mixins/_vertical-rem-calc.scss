@@ -1,0 +1,6 @@
+// Calculates px Height to rem and adds a fallback
+
+@mixin height($height) {
+    height: $height;
+    height: calculateHeightRem($height);
+}

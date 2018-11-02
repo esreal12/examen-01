@@ -1,0 +1,91 @@
+.primary-gallery {
+
+    &__controls {
+        width: 80%;
+        @include center(horizontal);  
+        height: 20px;
+        position: relative;
+        bottom: calculateHeightRem(75px);
+    }
+    
+    &--a {
+        background-image: url(../../img/img-x.png);
+        float: left;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        min-width: 100%;
+        vertical-align: middle;
+        @include height(340px);
+    }
+    
+    &--b {
+        background-image: url(../../img/smush-1.jpg);
+        float: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        @include height(340px);
+    }
+}
+
+.circles {
+    list-style: none;
+    @include center(vertical);
+    
+    &__circle {
+        float: left;
+        width: 15px;
+        height: 15px;
+        border: 2px solid $color-black;
+        border-radius: 50px;
+        margin-right: 10px;
+        background-color: $color-black;
+    }
+
+    &--left {
+        position: relative;
+        float: left;
+        left: 0;
+    }
+
+    &--right {
+        float: right;
+        right: 0;
+    }
+}
+
+.color-container {
+    height: 100%;
+    width: auto;
+    background-color: rgba($color-v, 0.8);
+}
+
+
+
+
+.secondary-gallery {
+    height: 300px;
+    background-image: url(../../img/Sense-títol-800x532.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__content {
+        padding: 20px 60px 20px 60px;
+        color: $color-white;
+    }
+
+    &__image {
+        background-image: url(../../img/Sense-títol-800x532.jpg);
+        height: auto;
+        width: 100%;
+        z-index: 2;
+    }
+
+    &__next-left svg {
+        background-image: url(https://remo-production.s3.amazonaws.com/static/images/icons/arrow-large-white.svg);
+        width: 100px;
+        fill: $color-iii;
+
+    }
+}

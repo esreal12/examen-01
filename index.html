@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Niramit|Rubik:700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -12,28 +15,105 @@
     <title>Examen #1</title>
 </head>
 
-<body>
-    <header class="g-header">
-        <div class="g-header__content">
-            <div class="g-header__burguer-btn">
-                <span class="fa-bars"></span>
-                <span class="fa-bars"></span>
-                <span class="fa-bars"></span>
-            </div>
-            <div class="logo">
-                <figure>
-                    <img src="" alt="">
-                </figure>
-            </div>
-            <div class="search">
-                span.
-            </div>
-        </div>
-    </header>
 
+
+
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <nav class="header__nav">
+            <span class="fa fa-bars header__nav-btn"></span>
+        </nav>
+
+        <div class="header__logo">
+            <figure>
+                <img src="img/logo.svg" alt="esreal">
+            </figure>
+        </div>
+
+        <div class="header__search">
+            <a class="fa fa-search header__search__icon"></a>
+        </div>
+
+    </header>
+    <!-- HEADER END -->
+
+
+    <div class="back-nav-filler"></div>
+
+
+    <!-- MAIN -->
     <main>
+        <!-- Carrousell Intro -->
+        <section id="primary-gallery" class="container">
+
+            <div class="primary-gallery primary-gallery--a">
+                <div class="primary-gallery__controls">
+                    <ul class="circles circles--left">
+                        <li class="circles__circle"></li>
+                        <li class="circles__circle"></li>
+                        <li class="circles__circle"></li>
+                        <li class="circles__circle"></li>
+                    </ul>
+                    <a href="#" class="btn btn--right">View Picture</a>
+                </div>
+            </div>
+
+            <div class="primary-gallery primary-gallery--b">
+                <div class="color-container">
+                    <div class="primary-gallery__controls">
+                        <ul class="circles circles--right">
+                            <li class="circles__circle"></li>
+                            <li class="circles__circle"></li>
+                            <li class="circles__circle"></li>
+                            <li class="circles__circle"></li>
+                        </ul>
+                        <a href="#" class="btn btn--left">Read More</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="secondary-gallery" class="container">
+            <div class="secondary-gallery">
+                <div class="secondary-gallery__content">
+                    <h3>Festival Drums</h3>
+                    <p>Featuring replaceble Fliptop Pre-tuned Drumheads</p>
+                    <a href="#" class="btn btn--white-border">Visit Page</a>
+                </div>
+            
+                <button class="second-gallery__next-left">
+                    <svg viewBox="0 0 100 100" class="second-gallery__next-left">
+                        <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path>
+                    </svg>
+                </button>
+            
+                <div class="second-gallery__btn-right">
+
+                </div>
+            </div>
+        </section>
 
     </main>
+    <!-- MAIN END -->
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+    <!-- FOOTER END -->
+
+
+
+
 </body>
 
 </html>

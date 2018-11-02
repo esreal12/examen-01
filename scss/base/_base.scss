@@ -1,16 +1,31 @@
+/*------------------------------------*\
+ #BASE                 
+\*------------------------------------*/
+
 html {
-    font-size: 62.5%;
+  @include font-size(16px);
+  min-width: $min-width-small;
+  max-width: $max-width-small;
 }
 
 body {
-    box-sizing: border-box;
-    // background-color: $color-pentanary;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto 2em;
-    display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 2em;
+  display: block;
+}
+
+.container {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-width-medium;
+  position: relative;
+  overflow: hidden;
 }

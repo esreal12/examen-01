@@ -1,0 +1,34 @@
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.2rem;
+    @include font-size(10px);
+    font-weight: lighter;
+    // @include width(135px);
+    @include height(35px);
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: $color-black;
+    border-color: $color-black;
+    font-family: $font-family-primary;
+    
+    color: $color-white;
+    
+    &--left {
+        @include center(vertical);
+        position: relative;
+        float: left;
+        left: 0;
+    }
+    
+    &--right {
+        @include center(vertical);
+        float: right;
+        right: 0;
+    }
+
+    &--white-border {
+        padding: 0.5rem;
+        border: 1px solid $color-white;
+    }
+}

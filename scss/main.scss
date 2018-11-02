@@ -1,21 +1,40 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@charset 'utf-8';
 
-@import "base/typography";
+// FUNCTIONS
+@import "abstracts/functions/calculateRem";
+@import "abstracts/functions/calculateWidth%";
+
+// MIXINS
+@import "abstracts/mixins/absolute-middle";
+@import "abstracts/mixins/clearfix";
+@import "abstracts/mixins/font-size";
+@import "abstracts/mixins/mediaqueries";
+@import "abstracts/mixins/vertical-rem-calc";
+@import "abstracts/mixins/width-percentage";
+
+// VARIABLES
+@import "abstracts/variables/var-ui-colors";
+@import "abstracts/variables/var-ui-fonts";
+@import "abstracts/variables/var-ui-grid";
+@import "abstracts/variables/var-ui-layout";
+@import "abstracts/variables/var-ui-mediaqueries";
+
+// BASE
 @import "base/animations";
 @import "base/base";
+@import "base/typography";
 @import "base/utilities";
-@import "base/mediaqueries";
 
-@import "components/heading-primary";
-@import "components/card";
-@import "components/social-links";
-// @import "components/gallery";
+// COMPONENTS
+@import "components/buttons";
+@import "components/galleries";
 
-@import "layout/header";
+// LAYOUT
 @import "layout/grid";
+@import "layout/header";
 
+// SECTIONS
 @import "pages/home";
 
+// VENDORS
 @import "vendors/reset";

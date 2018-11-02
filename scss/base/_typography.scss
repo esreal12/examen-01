@@ -1,9 +1,21 @@
+/*------------------------------------*\
+ #TYPOGRAPHY                  
+\*------------------------------------*/
+
+// Imports Fonts from Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Modak|Poppins:400,900');
+
+
+// Defines parammeters related to typography
+html {
+  font-family: $font-family-primary;
+}
+
 body {
-    font-family: $font-family-primary;
-    line-height: 1.7;
-    color: $color-typography;
+  line-height: 1.7;
+  color: $color-typography;
 }
 
 .header {
-    font-family: $font-family-titles;
+  font-family: $font-family-titles;
 }

@@ -1,38 +1,64 @@
-.header {
-    height: auto;
-    padding: 1.3rem;
-    border-bottom: 0.063rem solid rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    font-weight: 700;
-    line-height: 1;
+/*------------------------------------*\
+ #HEADER                 
+\*------------------------------------*/
 
-    &__logotype {
-        display: block;
-        margin: 0 auto;
-        width: 5.5rem;
-        text-align: center;
-    }
+.header {
+  display: block;
+  @include height(60px);
+  width: 100%;
+  background-color: $color-vi;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 
     &__nav {
-        overflow: hidden;
-        list-style: none;
-        text-align: center;
-        padding-top: 1.5rem;
-
-        & ul li:not(:last-child) {
-            display: inline;
-            margin-right: 1rem;
-
-        }
-
-        & a {
-            color: $color-grey;
-            text-decoration: none;
-            font-size: 1.3rem;
+      @include width(60px);
+      background-color: blue;
+      float: left;
+        
+        &-btn{
+          padding: 0.96rem;
+          @include center(vertical);
+          @include font-size(24px);
+          color: $color-white;
         }
     }
+    
+    &__logo {
+        
+      font-family: $font-family-primary;
+      float: left;
+        
+        & figure {
+          min-width: 88px;
+          min-height: 35px;
+          @include center(both);
+          @include width(160px);
+        }
+        
+        & img {
+          @include center(both);
+          max-width: 158px;
+          max-height: 35px;
+        }
+    }
+    
+    &__search {
+      @include width(50px);
+      float: right;
+      background-color: #000;
+        
+        &__icon {
+            color: $color-white;
+            color: #f7f1e3;
+            position: absolute;
+            top: 35%;
+            right: 25px;
+        }
+    }
+
 }
 
-#esreal_logo {
-    fill: $color-primary;
+.back-nav-filler {
+  @include height(60px);
 }
