@@ -73,6 +73,11 @@
     &__content {
         padding: 20px 60px 20px 60px;
         color: $color-white;
+        background-color: rgba($color-black, 0.5);
+        
+        & p {
+            @include font-size(12px);
+        }
     }
 
     &__image {
@@ -87,5 +92,64 @@
         width: 100px;
         fill: $color-iii;
 
+    }
+}
+
+
+
+
+.tertiary-gallery {
+    background-color: orange;
+    width: 100%;
+
+    &__header {
+        background-color: #fff;
+    }
+
+    &__card {
+        // border: 2px solid $color-vi;
+        // border-bottom: 1px solid red;
+        background-size: cover;
+        float: left;
+        @include height(382px);
+        position: relative;
+
+        & span {
+            background-color: $color-ii;
+            color: $color-typography;
+            text-transform: uppercase;
+            bottom: 1rem;
+            padding: 0 0.5rem;
+            margin-left: 1rem;
+            position: absolute;
+        }
+        
+        &--a {
+            background-image: url(../../img/002-vaso_medio_lleno.jpg);
+            background-repeat: no-repeat;
+            width: 100%;
+            // @include height(382px);
+        }
+        &--b {
+            background-image: url(../../img/1451352298708.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            
+        }
+        &--c {
+            background-image: url(../../img/002-vaso_medio_lleno.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+         
+        }
+        &--d {
+            background-image: url(../../img/1451352298708.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+           
+        }
     }
 }
