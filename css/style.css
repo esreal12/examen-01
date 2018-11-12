@@ -344,7 +344,7 @@ body {
   bottom: -7.3125rem; }
 
 .primary-gallery--a {
-  background-image: url(../../img/img-x.png);
+  background-image: url(../../img/image-shark.jpg);
   float: left;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -386,20 +386,42 @@ body {
     float: right;
     right: 0; }
 
-.color-container {
+.color-container-1 {
+  height: 100%;
+  width: auto;
+  background-color: rgba(255, 166, 0, 0.8); }
+
+.color-container-2 {
   height: 100%;
   width: auto;
   background-color: rgba(0, 110, 255, 0.8); }
 
+.gallery-info {
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 10%;
+  color: #f7f1e3; }
+  .gallery-info__main {
+    text-transform: uppercase;
+    font-weight: bolder; }
+  .gallery-info__sub {
+    line-height: 0.3rem;
+    font-size: 12px;
+    font-size: 0.75rem;
+    border-bottom: 3px solid #ffa600; }
+
 .secondary-gallery {
-  height: 300px;
-  background-image: url(../../img/Sense-títol-800x532.jpg);
+  height: 400px;
+  height: 13rem;
+  background-image: url(../../img/image-purple.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
   .secondary-gallery__content {
     padding: 20px 60px 20px 60px;
     color: #f7f1e3;
-    background-color: rgba(33, 33, 33, 0.5); }
+    background-color: rgba(33, 33, 33, 0.5);
+    height: 400px;
+    height: 13rem; }
     .secondary-gallery__content p {
       font-size: 12px;
       font-size: 0.75rem; }
@@ -451,6 +473,21 @@ body {
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%; }
+
+.cards {
+  display: block;
+  width: 100%; }
+
+.card {
+  position: relative; }
+  .card__img {
+    height: auto; }
+  .card__description {
+    color: #e91e63;
+    position: absolute;
+    bottom: 10px;
+    margin-left: 15px;
+    z-index: 20; }
 
 .row {
   max-width: 114rem;
