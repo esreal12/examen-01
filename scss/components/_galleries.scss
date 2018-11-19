@@ -55,18 +55,6 @@
     }
 }
 
-.color-container-1 {
-    height: 100%;
-    width: auto;
-    background-color: rgba($color-vii, 0.8);
-}
-
-.color-container-2 {
-    height: 100%;
-    width: auto;
-    background-color: rgba($color-v, 0.8);
-}
-
 .gallery-info {
     position: absolute;
     margin-top: 2rem;
@@ -81,7 +69,12 @@
     &__sub {
         line-height: 0.3rem;
         @include font-size(12px);
-        border-bottom: 3px solid $color-vii;
+        // border-bottom: 3px solid $color-vii;
+    }
+
+    &__text {
+        margin-top: 20px;
+        @include font-size(10px);
     }
 }
 

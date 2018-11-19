@@ -331,6 +331,8 @@ body {
   .btn--white-border {
     padding: 0.5rem;
     border: 1px solid #f7f1e3; }
+  .btn--info {
+    margin-top: 10px; }
 
 .primary-gallery__controls {
   width: 80%;
@@ -386,16 +388,6 @@ body {
     float: right;
     right: 0; }
 
-.color-container-1 {
-  height: 100%;
-  width: auto;
-  background-color: rgba(255, 166, 0, 0.8); }
-
-.color-container-2 {
-  height: 100%;
-  width: auto;
-  background-color: rgba(0, 110, 255, 0.8); }
-
 .gallery-info {
   position: absolute;
   margin-top: 2rem;
@@ -407,8 +399,11 @@ body {
   .gallery-info__sub {
     line-height: 0.3rem;
     font-size: 12px;
-    font-size: 0.75rem;
-    border-bottom: 3px solid #ffa600; }
+    font-size: 0.75rem; }
+  .gallery-info__text {
+    margin-top: 20px;
+    font-size: 10px;
+    font-size: 0.625rem; }
 
 .secondary-gallery {
   height: 400px;
@@ -481,13 +476,101 @@ body {
 .card {
   position: relative; }
   .card__img {
-    height: auto; }
+    margin-bottom: 0; }
   .card__description {
     color: #e91e63;
     position: absolute;
     bottom: 10px;
     margin-left: 15px;
-    z-index: 20; }
+    z-index: 0; }
+
+.info-card {
+  background-image: url(../../img/002-vaso_medio_lleno.jpg);
+  background-size: cover;
+  height: 400px;
+  height: 13rem;
+  width: 100%;
+  background-color: blue; }
+
+.social {
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  height: 110px;
+  height: -5.125rem; }
+
+.social__icons-list {
+  display: inline-block;
+  width: 100%;
+  list-style: none;
+  border-bottom: 2px solid #ff9800;
+  justify-content: center;
+  padding-bottom: 10px; }
+
+.social__icons-list li:not(first-child) {
+  float: left;
+  margin-right: 7.5%;
+  margin-left: 5.5%; }
+
+.social-icon {
+  display: inline-block;
+  padding: 12px 10%;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #e91e63;
+  width: 10%; }
+
+.forms {
+  margin-bottom: 20px; }
+
+.mailing-list {
+  display: block; }
+  .mailing-list__label {
+    float: left;
+    font-size: 10px;
+    font-size: 0.625rem;
+    color: #4caf50; }
+
+.find-a-retailer {
+  display: block; }
+  .find-a-retailer__label {
+    float: left;
+    font-size: 10px;
+    font-size: 0.625rem;
+    color: #4caf50; }
+
+.input {
+  position: relative; }
+
+input[type="text"] {
+  width: 12rem;
+  padding: 0.4rem;
+  float: left;
+  z-index: 3; }
+
+button.form-button-a {
+  border: none;
+  outline: none;
+  background-color: #4caf50;
+  padding: 0.5rem;
+  float: right;
+  right: 0;
+  top: 21px;
+  z-index: 4;
+  position: absolute;
+  font-weight: 800; }
+
+button.form-button-b {
+  border: none;
+  outline: none;
+  background-color: #4caf50;
+  padding: 0.5rem;
+  float: right;
+  right: 0;
+  top: 75px;
+  z-index: 4;
+  position: absolute;
+  font-weight: 800; }
 
 .row {
   max-width: 114rem;
@@ -575,12 +658,42 @@ body {
   height: 60px;
   height: -8.25rem; }
 
+footer {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #212121; }
+
+.footer-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden; }
+
 #main-gallery {
   margin-left: auto;
   margin-right: auto;
   max-width: 1240px;
   position: relative;
   overflow: hidden; }
+
+.color-container-1 {
+  height: 100%;
+  width: auto;
+  background-color: rgba(255, 166, 0, 0.8); }
+
+.color-container-2 {
+  height: 100%;
+  width: auto;
+  background-color: rgba(0, 110, 255, 0.8); }
+
+.color-container-3 {
+  height: 100%;
+  width: auto;
+  background-color: rgba(156, 39, 176, 0.8); }
 
 *,
 *::after,

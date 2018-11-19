@@ -28,11 +28,14 @@
 // COMPONENTS
 @import "components/buttons";
 @import "components/galleries";
-@import "components/cards";
+@import "components/card";
+@import "components/info-card";
+@import "components/social";
 
 // LAYOUT
 @import "layout/grid";
 @import "layout/header";
+@import "layout/footer";
 
 // SECTIONS
 @import "pages/home";

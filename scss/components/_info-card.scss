@@ -1,0 +1,7 @@
+.info-card {
+    background-image: url(../../img/002-vaso_medio_lleno.jpg);
+    background-size: cover;
+    @include height(400px);
+    width: 100%;
+    background-color: blue;
+}
